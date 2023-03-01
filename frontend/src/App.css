@@ -1,0 +1,186 @@
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  /* display: flex;
+  flex-direction: column; */
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container{
+  display: table;
+  width: 95%;
+  height: 80vh;
+  margin: 25px 25px 0px 25px;
+  padding: 10px;
+  border: 2px solid orange;
+  border-radius: 10px;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.container-empty{
+  background: rgb(165, 161, 161);
+  color: #282c34;
+  background-image: linear-gradient(to bottom,orange, white );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: 80vh;
+  margin: 25px 25px 0px 25px;
+  padding: 10px;
+  border: 2px solid orange;
+  border-radius: 10px;
+}
+.user{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+.ai{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.user-info{
+  font-size: large;
+  color: white;
+  background-color:orange;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 6px 10px 2px 4px;
+  padding: 10px;
+}
+.ai-info{
+  font-size: large;
+  border: 2px solid orange;
+  border-radius: 10px;
+  margin: 6px 10px 2px 4px;
+  padding: 10px;
+}
+
+img{
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.form-css{
+  background-color: white;
+  height: 70px;
+  width: 100%;
+  position: sticky;
+  bottom: 0px;
+}
+
+input{
+  /* background-color: grey; */
+  padding-left: 10px;
+  border: 2px solid orange;
+  font-size: 20px;
+  height: 40px;
+  width: 80%;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+button{
+  height: 40px;
+  width: 70px;
+  border: 2px solid orange;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: orange;
+  color: white;
+}
+
+button:hover{
+  background-color: white;
+  color: orange;;
+  cursor: pointer;
+}
+
+
+
+
+@media (max-width: 530px){
+  input{
+    /* background-color: grey; */
+    padding-left: 10px;
+    border: 2px solid orange;
+    font-size: 20px;
+    height: 35px;
+    width: 75%;
+    margin: 8px;
+    margin-left: 28px;
+    border-radius: 10px;
+  }
+  button{
+    height: 30px;
+    width: 50px;
+    border-radius: 10px;
+    font-size: 10px;
+    background-color: orange;
+    color: white;
+  }
+  form{
+    width: 107%;
+  }
+}
+
+@media (max-width: 370px){
+  input{
+    /* background-color: grey; */
+    padding-left: 10px;
+    border: 2px solid orange;
+    font-size: 20px;
+    height: 35px;
+    width: 60%;
+    margin: 8px;
+    margin-left: 0px;
+    border-radius: 10px;
+  }
+  button{
+    height: 30px;
+    width: 50px;
+    border-radius: 10px;
+    font-size: 10px;
+    background-color: orange;
+    color: white;
+  }
+  form{
+    width: 107%;
+  }
+}
